@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Link, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -9,14 +9,16 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import './Elements.css';
-import { FaGlobeAmericas,} from "react-icons/fa";
+import {FaPlaneDeparture } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-const options = ['Country', 'Bangladesh', 'India', 'England', 'Srilanka'];
+
+
+const options = ['City', 'Dhaka', 'Dilli', 'Newyork', 'Islamabad'];
 
 
 
-function Elm() {
+function El() {
 
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef(null);
@@ -55,7 +57,7 @@ function Elm() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                             }}>
-                                <FaGlobeAmericas />
+                                <FaPlaneDeparture />
                             </Typography>
                             {options[selectedIndex]}
                         </Box>
@@ -107,4 +109,4 @@ function Elm() {
         </Box>
     )
 }
-export default Elm;
+export default El;

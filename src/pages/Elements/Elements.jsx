@@ -11,24 +11,15 @@ import ElemenImgbay7 from '../../assets/Img/f7.webp';
 import ElemenImgbay8 from '../../assets/Img/f8.webp';
 import rasm from '../../assets/Img/rasm.webp';
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
-import Grow from '@mui/material/Grow';
-import Paper from '@mui/material/Paper';
-import Popper from '@mui/material/Popper';
-import MenuItem from '@mui/material/MenuItem';
-import MenuList from '@mui/material/MenuList';
 import './Elements.css';
 import { FiCircle } from "react-icons/fi";
-import { FaThumbtack, FaPlaneDeparture } from "react-icons/fa";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { FaThumbtack} from "react-icons/fa";
 import Elm from './Elm';
-import Switch from '@mui/material/Switch';
 import Elem from './Elem';
-import { pink } from '@mui/material/colors';
+import Switch from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
 import Checkbox from '@mui/material/Checkbox';
+import El from './El';
 
 const BpIcon = styled('span')(({ theme }) => ({
     borderRadius: 3,
@@ -64,11 +55,7 @@ const BpCheckedIcon = styled(BpIcon)({
         display: 'block',
         width: 16,
         height: 16,
-        backgroundImage:
-            "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
-            " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +
-            "1.003 0 00-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0012 5z' fill='%23fff'/%3E%3C/svg%3E\")",
-        // content: '""',
+        content: '""',
     },
     'input:hover ~ &': {
         backgroundColor: '#106ba3',
@@ -76,7 +63,6 @@ const BpCheckedIcon = styled(BpIcon)({
 });
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
-const options = ['City', 'Dhaka', 'Dilli', 'Newyork', 'Islamabad'];
 
 
 function BpCheckbox(props) {
@@ -97,32 +83,6 @@ function BpCheckbox(props) {
 
 
 function Elements() {
-
-    const [open, setOpen] = React.useState(false);
-    const anchorRef = React.useRef(null);
-    const [selectedIndex, setSelectedIndex] = React.useState(1);
-
-    const handleClick = () => {
-        console.info(`You clicked ${options[selectedIndex]}`);
-        setOpen((prevOpen) => !prevOpen);
-    };
-
-    const handleMenuItemClick = (event, index) => {
-        setSelectedIndex(index);
-        setOpen(false);
-    };
-
-    const handleToggle = () => {
-        setOpen((prevOpen) => !prevOpen);
-    };
-
-    const handleClose = (event) => {
-        if (anchorRef.current && anchorRef.current.contains(event.target)) {
-            return;
-        }
-
-        setOpen(false);
-    };
 
 
     return (
@@ -975,69 +935,7 @@ function Elements() {
                                         </Typography>
                                         <input type="text" placeholder='Address' id='ElementsYozuv72' />
                                     </Box>
-                                    <Box id='elemenlbutcush1' >
-                                        <React.Fragment>
-                                            <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                                                <Button onClick={handleClick}>
-                                                    <Box sx={{ display: 'flex', alignItems: 'center', maxHeight: '40px' }}>
-                                                        <Typography sx={{
-                                                            minWidth: '45px',
-                                                            background: '#f9f9ff',
-                                                            color: '#797979',
-                                                            display: 'flex',
-                                                            alignItems: 'center',
-                                                            justifyContent: 'center',
-                                                        }}>
-                                                            <FaPlaneDeparture />
-                                                        </Typography>
-                                                        {options[selectedIndex]}
-                                                    </Box>
-                                                    <MdOutlineKeyboardArrowDown style={{
-                                                        fontSize: '22px',
-                                                    }} />
-                                                </Button>
-                                            </ButtonGroup>
-                                            <Popper
-                                                sx={{
-                                                    zIndex: 1,
-                                                }}
-                                                open={open}
-                                                anchorEl={anchorRef.current}
-                                                role={undefined}
-                                                transition
-                                                disablePortal
-                                            >
-                                                {({ TransitionProps, placement }) => (
-                                                    <Grow
-                                                        {...TransitionProps}
-                                                        style={{
-                                                            transformOrigin:
-                                                                placement === 'bottom' ? 'center top' : 'center bottom',
-                                                        }}
-                                                    >
-                                                        <Paper>
-                                                            <ClickAwayListener onClickAway={handleClose}>
-                                                                <MenuList id="split-button-menu" autoFocusItem>
-                                                                    {options.map((option, index) => (
-                                                                        <MenuItem
-                                                                            key={option}
-                                                                            selected={index === selectedIndex}
-                                                                            onClick={(event) => handleMenuItemClick(event, index)}
-                                                                            sx={{
-                                                                                width: '100%'
-                                                                            }}
-                                                                        >
-                                                                            {option}
-                                                                        </MenuItem>
-                                                                    ))}
-                                                                </MenuList>
-                                                            </ClickAwayListener>
-                                                        </Paper>
-                                                    </Grow>
-                                                )}
-                                            </Popper>
-                                        </React.Fragment>
-                                    </Box>
+                                    <El />
                                     <Elm />
                                     <textarea placeholder="Message" id='ElementsYozuv80'></textarea>
                                     <input type="text" placeholder='Primary color' id='ElementsYozuv81' />
