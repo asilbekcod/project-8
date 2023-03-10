@@ -4,26 +4,27 @@ import rasm from "../../imgs/header-bg.jpg.webp"
 import { BsArrowRight } from "react-icons/bs";
 import Exportlar from '../home/exp';
 import What from '../home/what';
+import Choos from '../choos';
 
 function Cars() {
     return (
         <Box>
-            <Box>
+            <Box sx={{position:'relative'}}>
                 <Box sx={{
                     position: "absolute",
                     width: "100%"
                 }}>
                     <img src={rasm} alt="" style={{
                         width: '100%',
-                        height: "450px",
-
-
+                        height: "350px",
+                        backgroundSize:'cover   ',
+                        objectFit: 'cover'
                     }} />
                 </Box>
                 <Box sx={{
                     background: "rgba(0, 0, 0, 0.8)",
                     width: "100%",
-                    height: "450px",
+                    height: "350px",
                     position: "relative",
                     display: "flex",
                     justifyContent: "center",
@@ -65,6 +66,7 @@ function Cars() {
                     </Typography>
                 </Box>
             </Box>
+            <Choos/>
             <Exportlar/>
             <What/>
         </Box>

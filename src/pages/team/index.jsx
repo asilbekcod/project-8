@@ -9,22 +9,22 @@ import { Dattar } from '../home/map'
 function Team() {
     return (
         <Box>
-            <Box>
+            <Box sx={{position:'relative'}}>
                 <Box sx={{
                     position: "absolute",
                     width: "100%"
                 }}>
                     <img src={rasm} alt="" style={{
                         width: '100%',
-                        height: "450px",
-
-
+                        height: "350px",
+                        backgroundSize:'cover   ',
+                        objectFit: 'cover'
                     }} />
                 </Box>
                 <Box sx={{
                     background: "rgba(0, 0, 0, 0.8)",
                     width: "100%",
-                    height: "450px",
+                    height: "350px",
                     position: "relative",
                     display: "flex",
                     justifyContent: "center",
@@ -35,7 +35,7 @@ function Team() {
                         fontSize: "48px",
                         fontWeight: "600"
                     }}>
-                       Support Teams
+                        Team
                         <Box sx={{
                             display: "flex",
                             alignItems: "center",

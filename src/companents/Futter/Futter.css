@@ -1,0 +1,112 @@
+#futyoz1{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2em;
+}
+#futyoz2{
+    margin-bottom: 10px;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+#futyoz3{
+    margin-bottom: 16px;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+#futyoz4{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    padding-right: 25px;
+    color: #fff;
+}
+#futyoz5{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.625em;
+    padding-right: 25px;
+    color: #fff;
+}
+#futyoz5:hover{
+    color: #fab700;
+}
+#futyoz4:hover{
+    color: #fab700;
+}
+#futyoz6{
+    display: flex;
+    align-items: center;
+}
+#futyoz7{
+    border: none;
+    width: 80% !important;
+    font-weight: 300;
+    background: #f9f9ff;
+    color: #eee;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 9.5px;
+    outline: none;
+    line-height: 1.5;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#futyoz7:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    color: #495057;
+    background-color: #fff;
+}
+#futyoz7::placeholder{
+    font-size: 13px;
+    font-weight: 300;
+}
+#futyoz8{
+    background-color: #fab700;
+    color: #fff;
+    border-radius: 0;
+    padding: 8px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#futyoz9 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+
+}
+@media screen and (max-width:600px) {
+    #futter .css-1oqqzyl-MuiContainer-root {
+        padding: 0 !important;
+    }
+    #futyoz10{
+        margin-bottom: 30px;
+    }
+}

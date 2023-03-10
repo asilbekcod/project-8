@@ -6,24 +6,28 @@ function Some() {
     const [value, setValue] = React.useState(3);
     return (
         <Box sx={{ p: "60px 0" }}>
-            <Box sx={{ mb: "50px" }}>
-                <Typography sx={{
-                    fontSize: "36px",
-                    m: "0 0 0px",
-                    color: "#222222",
-                    fontWeight: "500",
-                    textAlign: "center"
-                }}>Some Features that Made us Unique</Typography>
-                <Typography sx={{
-                    color: "#777777",
-                    fontSize: "14px",
-                    lineHeight: "1.625em",
-                    fontFamily: '"Poppins", sans-serif',
-                    textAlign: "center   "
-                }}>
-                    Who are in extremely love with eco friendly system.
-                </Typography>
-            </Box>
+            <Container>
+
+
+                <Box sx={{ mb: "50px" }}>
+                    <Typography sx={{
+                        fontSize: "36px",
+                        m: "0 0 0px",
+                        color: "#222222",
+                        fontWeight: "500",
+                        textAlign: "center"
+                    }}>Some Features that Made us Unique</Typography>
+                    <Typography sx={{
+                        color: "#777777",
+                        fontSize: "14px",
+                        lineHeight: "1.625em",
+                        fontFamily: '"Poppins", sans-serif',
+                        textAlign: "center   "
+                    }}>
+                        Who are in extremely love with eco friendly system.
+                    </Typography>
+                </Box>
+            </Container>
             <Box>
                 <Container>
                     <Grid container spacing={2}>
