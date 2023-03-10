@@ -2,7 +2,6 @@ import { Box, Container, Grid, Link, Typography } from '@mui/material'
 import React from 'react'
 import rasm from "../../imgs/header-bg.jpg.webp"
 import Choos from '../choos'
-import Choose from './choose'
 import Export from './exp'
 import Global from './global'
 import Latest from './latest'

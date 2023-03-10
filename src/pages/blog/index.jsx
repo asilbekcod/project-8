@@ -17,22 +17,22 @@ import { daekom, Fara, farmon, farmon1 } from '../home/map';
 function Blog() {
     return (
         <Box>
-            <Box>
+            <Box sx={{ position: 'relative' }}>
                 <Box sx={{
                     position: "absolute",
                     width: "100%"
                 }}>
                     <img src={rasm} alt="" style={{
                         width: '100%',
-                        height: "450px",
-
-
+                        height: "350px",
+                        backgroundSize: 'cover   ',
+                        objectFit: 'cover'
                     }} />
                 </Box>
                 <Box sx={{
                     background: "rgba(0, 0, 0, 0.8)",
                     width: "100%",
-                    height: "450px",
+                    height: "350px",
                     position: "relative",
                     display: "flex",
                     justifyContent: "center",
@@ -43,7 +43,7 @@ function Blog() {
                         fontSize: "48px",
                         fontWeight: "600"
                     }}>
-                        Blog Home
+                        Blog
                         <Box sx={{
                             display: "flex",
                             alignItems: "center",
@@ -68,7 +68,7 @@ function Blog() {
                                 cursor: "pointer",
                                 fontWeight: "500"
                             }}>
-                                Blog Home
+                                Blog
                             </Link>
                         </Box>
                     </Typography>
@@ -148,7 +148,7 @@ function Blog() {
                             </Container>
                         ))}
                     </Grid>
-                    <Grid item lg={4} md={4 } sm={12} xs={12}>
+                    <Grid item lg={4} md={4} sm={12} xs={12}>
                         <Box>
                             <Box sx={{
                                 width: "100%",
@@ -371,13 +371,13 @@ function Blog() {
                                     p: "8px 10px",
                                     mb: "8px",
                                     border: "1px solid #eee",
-                                    "&:hover":{
-                                        background:"#fab700",
-                                        color:"white"
+                                    "&:hover": {
+                                        background: "#fab700",
+                                        color: "white"
                                     },
-                                    cursor:"pointer",
-                                    transition:"0.2s",
-                                    fontSize:"14px"
+                                    cursor: "pointer",
+                                    transition: "0.2s",
+                                    fontSize: "14px"
                                 }}>
                                     Lifestyle
                                 </Typography>

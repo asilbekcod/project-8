@@ -7,24 +7,27 @@ import { Gaplar } from '../map';
 function Latest() {
     return (
         <Box>
+
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Box sx={{ mb: "50px", width: "650px" }}>
-                    <Typography sx={{
-                        fontSize: "36px",
-                        m: "0 0 0px",
-                        color: "#222222",
-                        fontWeight: "500",
-                        textAlign: "center"
-                    }}>Latest From Our Blog</Typography>
-                    <Typography sx={{
-                        color: "#777777",
-                        fontSize: "14px",
-                        lineHeight: "1.625em",
-                        fontFamily: '"Poppins", sans-serif',
-                        textAlign: "center   ",
-                    }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </Typography>
+                    <Container>
+                        <Typography sx={{
+                            fontSize: "36px",
+                            m: "0 0 0px",
+                            color: "#222222",
+                            fontWeight: "500",
+                            textAlign: "center"
+                        }}>Latest From Our Blog</Typography>
+                        <Typography sx={{
+                            color: "#777777",
+                            fontSize: "14px",
+                            lineHeight: "1.625em",
+                            fontFamily: '"Poppins", sans-serif',
+                            textAlign: "center   ",
+                        }}>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </Typography>
+                    </Container>
                 </Box>
             </Box>
 
@@ -41,7 +44,7 @@ function Latest() {
                                     "&:hover": {
                                         color: "#fab700  "
                                     },
-                                    mb:"30px"
+                                    mb: "30px"
                                 }}>
 
                                     <Box>

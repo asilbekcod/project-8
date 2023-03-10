@@ -23,6 +23,32 @@ import kar3 from "../../../imgs/48.png"
 import marko from "../../../imgs/50.png"
 
 
+export const Index =[
+    {
+        id:"1",
+        
+    },
+    {
+        id:"2",
+        mb:"25px"
+        
+    },
+    {
+        id:"3",
+        mb:"25px"
+
+        
+    },
+    {
+        id:"4",
+        
+    },
+    {
+        id:"5",
+        
+    },
+]
+
 export const farmon1 = [
     {
         id: "1",
@@ -137,6 +163,15 @@ export const Fara = [
         id: "4",
         rasm: kar3
     },
+]
+
+
+export const Fara1 = [
+    {
+        id: "1",
+        rasm: kar
+    },
+   
 ]
 export const Conat = [
     {

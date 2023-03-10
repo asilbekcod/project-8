@@ -1,0 +1,30 @@
+export const NavbarMap = [
+    {
+        Yoz:'HOME',
+        to:'/'
+    },
+        {
+        Yoz:'ABOUT',
+        to:'/about'
+    },
+        {
+        Yoz:'CARS',
+        to:'/cars'
+    },
+        {
+        Yoz:'SERVICE',
+        to:'/servise'
+    },
+        {
+        Yoz:'TEAM',
+        to:'/team'
+    },
+        {
+        Yoz:'BLOG',
+        to:'/blog'
+    },
+        {
+        Yoz:'CONTACT',
+        to:'/contact'
+    }
+]
