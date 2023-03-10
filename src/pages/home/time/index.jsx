@@ -20,8 +20,8 @@ function Time() {
                 <Container>
 
                     <Grid container spacing={2}>
-                        {Timer.map((v) => (
-                            <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
+                        {Timer.map((v, i) => (
+                            <Grid item lg={2.4} md={2.4} sm={2.4} xs={6} key={i}>
                                 <Box>
                                     <Typography sx={{
                                         fontSize: "48px",

@@ -36,9 +36,9 @@ function Latest() {
             }}>
                 <Container>
                     <Grid container spacing={2}>
-                        {Gaplar.map((v) => (
+                        {Gaplar.map((v, i) => (
 
-                            <Grid item lg={3} md={3} sm={6} xs={12}>
+                            <Grid item lg={3} md={3} sm={6} xs={12} key ={i}>
                                 <Box sx={{
                                     transition: "0.2s",
                                     "&:hover": {

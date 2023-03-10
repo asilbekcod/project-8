@@ -31,9 +31,9 @@ function Some() {
             <Box>
                 <Container>
                     <Grid container spacing={2}>
-                        {Datat.map((v) => (
+                        {Datat.map((v, i) => (
 
-                            <Grid item lg={4} md={4} sm={6} xs={12}>
+                            <Grid key={i} item lg={4} md={4} sm={6} xs={12}>
                                 <Box sx={{
                                     width: "100%",
                                     height: "auto",

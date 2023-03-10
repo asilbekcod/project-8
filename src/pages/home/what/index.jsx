@@ -29,8 +29,8 @@ function What() {
             <Box>
                 <Container>
                     <Grid container spacing={2}>
-                        {Whatta.map((v) => (
-                            <Grid item lg={4} md={4} sm={6} xs={12}>
+                        {Whatta.map((v, i) => (
+                            <Grid item lg={4} md={4} sm={6} xs={12} key={i}>
                                 <Box sx={{
                                     width: "100%",
                                     height: "auto",
